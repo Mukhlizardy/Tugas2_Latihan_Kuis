@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'screens/login_page.dart';
 
+// Main function to run the app
 void main() {
   runApp(const MyApp());
 }
@@ -12,12 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Food App',
+      title: 'News App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        primaryColor: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        scaffoldBackgroundColor: Colors.grey[100],
       ),
       home: const LoginPage(),
     );
